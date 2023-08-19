@@ -8,7 +8,7 @@ let days: string[] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 let display = () => {
     D = new Date;
     date = `${D.getDate()} ${months[D.getMonth()]}, ${D.getFullYear()}`
-    day = `${days[D.getDay()]}`
+    day = `${days[D.getDay()-1]}`
     hh = D.getHours();
     mm = D.getMinutes();
     ss = D.getSeconds();
